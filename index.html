@@ -1,531 +1,842 @@
-
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Personal Website">
-    <meta name="author" content="SiHaoShen">
-
-    <title>www.SiHaoShen.github.io - Personal website of Si-Hao Shen. Student of Automation Engineering Science.</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-
-    <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>Si Hao Shen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Si Hao Shen" />
+    <meta name="keywords" content="vcard, responsive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio" />
+    <meta name="author" content="lmpixels" />
+    <link rel="shortcut icon" href="favicon.ico">
 
 
-    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="css/animations.css" type="text/css">
+    <link rel="stylesheet" href="css/perfect-scrollbar.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="vendor/icofont/icofont.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+  </head>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
-    <link rel="stylesheet" href="css/myIcons.css" type="text/css">
-    <link rel="stylesheet" href="css/myStyles.css" type="text/css">
-    <link rel="stylesheet" href="css/myTimeline.css" type="text/css">
+  <body>
+    <!-- Animated Background -->
+    <div class="lm-animated-bg" style="background-image: url(img/main_bg.png);"></div>
+    <!-- /Animated Background -->
 
-
-
-
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body id="page-top">
-
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Si-Hao Jason Shen</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#about">About Me</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#cv">CV</a>
-                    </li>
-                   <!-- <li>
-                        <a class="page-scroll" href="#portfolio">Projects</a>
-                    </li> -->
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+    <!-- Loading animation -->
+    <div class="preloader">
+      <div class="preloader-animation">
+        <div class="preloader-spinner">
         </div>
-        <!-- /.container-fluid -->
-    </nav>
+      </div>
+    </div>
+    <!-- /Loading animation -->
 
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1 id="greeting"></h1>
-                <hr>
-                <h2>My name is Si Hao Jason Shen.  </h2>
-                <h3>Mechanical Engineer - Automation Engineer</h3>
-                <p></p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Pleasure to meet you!</a>
+    <div class="page">
+      <div class="page-content">
+
+          <header id="site_header" class="header mobile-menu-hide">
+            <div class="header-content">
+              <div class="header-photo">
+                <img src="img/main_photo.jpg" alt="Si Hao Shen">
+              </div>
+              <div class="header-titles">
+                <h2>Si Hao Shen</h2>
+                <h5 style="margin-top:-8px;">(You can call me Jason)</h5>
+                <h4>Software Developer <a href="https://new.siemens.com/global/en/company/about/businesses/digital-industries.html"> @Siemens Digital Industries</a></h4>
+              </div>
+            </div>
+            
+            <head>
+              <style>
+                .icon {
+                  font-size: 40px;
+                }
+              </style>
+            </head>
+
+            <ul class="main-menu">
+              <li class="active">
+                <a href="index.html#home" class="nav-anim" data-object="page">
+                  <span class="material-icons icon">home</span>
+                  <span class="link-text">Home</span>
+                </a>
+              <li>
+                <a href="index.html#about-me" class="nav-anim">
+                  <span class="material-icons icon">account_circle</span>
+                  <span class="link-text">About Me</span>
+                </a>
+              </li>
+              <li>
+                <a href="index.html#resume" class="nav-anim">
+                  <span class="material-icons icon">school</span>
+                  <span class="link-text">Resume</span>
+                </a>
+              </li>
+              <!-- <li>
+                <a href="index.html#publications" class="nav-anim">
+                  <span class="menu-icon lnr lnr-paperclip"></span>
+                  <span class="link-text">Publications</span>
+                </a>
+              </li> -->
+               <li>
+                <a href="index.html#teaching" class="nav-anim">
+                  <span class="material-icons icon">work</span>
+                  <span class="link-text">Projects</span>
+                </a>
+              </li>
+              <!-- <li>
+                <a href="index.html#portfolio" class="nav-anim">
+                  <span class="menu-icon lnr lnr-picture"></span>
+                  <span class="link-text">Moments</span>
+                </a>
+              </li> -->
+               <li>
+                <a href="index.html#awards" class="nav-anim">
+                  <span class="material-icons icon">emoji_events</span>
+                  <span class="link-text">Awards</span>
+                </a>
+              </li>
+              <li>
+                <a href="index.html#contact" class="nav-anim">
+                  <span class="material-icons icon">mail</span>
+                  <span class="link-text">Contact</span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="social-links">
+              <ul>
+                <li><a href="https://www.linkedin.com/in/si-hao-shen-21413482/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="mailto:shen.si-hao@hotmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                <!-- <li><a href="" target="_blank"><i class="fab fa-google"></i></a></li> -->
+                <li><a href="https://github.com/SiHaoShen" target="_blank"><i class="fab fa-github"></i></a></li>
+              </ul>
             </div>
 
+            <div class="header-buttons">
+              <a href="resources/CV_SiHaoShen.pdf" target="_blank" class="btn btn-primary" download="CV_SIHAOSHEN">Download CV</a>
+            </div>
 
+            <div class="copyrights">© 2023 All rights reserved.</div>
+          </header>
 
-            <div class="container social-links-container">
+          <!-- Mobile Navigation -->
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!-- End Mobile Navigation -->
+
+          <!-- Arrows Nav -->
+          <div class="lmpixels-arrows-nav">
+            <div class="lmpixels-arrow-right"><i class="icofont-simple-right"></i></div>
+            <div class="lmpixels-arrow-left"><i class="icofont-simple-left"></i></div>
+          </div>
+          <!-- End Arrows Nav -->
+
+          <div class="content-area">
+            <div class="animated-sections">
+              <!-- Home Subpage -->
+              <section data-id="home" class="animated-section start-page">
+                <div class="section-content vcentered">
+
                     <div class="row">
-                        <div class="col-md-1 col-md-offset-4 text-center">
-                            <div class="service-box">
-                                <a class="social-link" href="https://www.linkedin.com/in/si-hao-shen-21413482/">
-                                    <i class="fa fa-3x fa my-li-sq wow bounceIn"></i>
-                                </a>
+                      <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="title-block">
+                          <h2>Si Hao Shen</h2>
+                          <div class="owl-carousel text-rotation">                                    
+                            
+                            <div class="item">
+                              <div class="sp-subtitle">Software Engineer</div>
                             </div>
-                        </div>
-                        <div class="col-md-1 text-center">
-                            <div class="service-box">
-                                <a class="social-link" href="https://www.facebook.com/jason.shen.92">
-                                    <i class="fa fa-3x fa-facebook-square wow bounceIn" data-wow-delay=".1s"></i>
-                                </a>
+                            
+                            <div class="item">
+                              <div class="sp-subtitle">System Design, Software Architecture, Clean Code</div>
                             </div>
-                        </div>
-                        <div class="col-md-1 text-center">
-                            <div class="service-box">
-                                <a class="social-link" href="mailto:shen.si-hao@hotmail.com">
-                                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".2s"></i>
-                                </a>
+
+                            <div class="item">
+                              <div class="sp-subtitle">AWS, MindSphere, Edge Computing</div>
                             </div>
-                        </div>
-                        <div class="col-md-1 text-center">
-                            <div class="service-box">
-                                <a class="social-link" href="https://www.instagram.com/jason_sihao_shen/">
-                                    <i class="fa fa-3x fa-instagram wow bounceIn" data-wow-delay=".3s"></i>
-                                </a>
+                            
+                            <div class="item">
+                              <div class="sp-subtitle">Kubernetes, Docker, Terraform</div>
                             </div>
-                        </div>
-                    </div>
-            </div>
 
-        </div>
-    </header>
+                            <div class="item">
+                              <div class="sp-subtitle">Angular, Spring Boot, .NET</div>
+                            </div>
 
-    <section class="bg-primary" id="about">
-                <div class="col-lg-3 text-center">
-                    
-                    <img class="profile-img wow slideInLeft" src="img/profile.jpeg" />
-                        
-                </div>
-                <div class="col-lg-6 text-center">
-                    <h2 class="section-heading">About me</h2>
-                    <hr class="light">
-                    <p class="text-faded">
-                        Hello, my name is Si Hao Jason Shen and I'm 24 years old. <br>I'm currently living in Aachen and studying at the <a href="https://en.wikipedia.org/wiki/RWTH_Aachen_University">RWTH Aachen Univesity</a>. <br><br>
-                    </p>
-                    <p class="text-faded">
-                        I was born in Shanghai, come from Taiwan and have been living in Germany for most of my life. I have always been passionate about technology and problem solving, and therefore I choose to study my bachelor degree in <a href="#">Mechanical Engineering with focus on control and energy engineering</a> and my master degree in <a href="#">Automation Engineering</a>.
-                    </p>
-                    
-                    
-                    <p class="text-faded">
-                        In my free time, I love learning new technologies and reading recent information about flying cars. This intriguing idea about sitting in a <a href="#">flying car</a> and traveling with it to everywhere around the world has always been a dream of mine. I think the future is exciting and inspiring. Life can’t be just about solving problems, they have to be things that are inspiring and exciting which make me glad to wake up in the morning and feel alive. 
-                    </p>
-                    <p class="text-faded">
-                        I am deeply fascinated by  <a href="#">human mind and the world</a>. Thats why I also love to explore the natural landscapes, travel to several countries (Taiwan, US, Netherland, Poland, Greece etc.), spend time with family, girlfriend as well as discuss philosophy with inspiring people and so much more. It's hard to name it all. Nevertheless, these are a few of my favourite things:
-                    </p>
-                </div>
-                <div class="col-lg-3 text-center">
-                </div>
-
-        <!-- INTERESTS -->
-
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa fa-book wow bounceIn"></i>
-                        <h3 class="favourite-thing-heading">Reading</h3>
-                        <p class="text-faded"><span data-tooltip="Bertrand Russell" data-tooltip-position="left" class="quote">"There are two motives for reading a book; one, that you enjoy it; the other, that you can boast about it"</span><br>
-                        <span class="favourite-thing-explanation">Reading is my favorite way to learn about new subjects. If I want to understand something better, I will pick up a book, search for publications, selfstudy on MOOCs and start working on relevant projects.</span> </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-lightbulb-o wow bounceIn" data-wow-delay=".1s"></i>
-                        <h3 class="favourite-thing-heading">Engineering</h3>
-                        <p class="text-faded"><span data-tooltip="Leonardo da Vinc" data-tooltip-position="left" class="quote">"I have been impressed with the urgency of doing. Knowing is not enough; we must apply"</span> <br> <span class="favourite-thing-explanation">I'm passionate about making, designing, practicing and solving technical problems in the developing world, in order to makte the lives of others better. The commitment to learning by doing has always been my personal dogma towards education.</span> </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-question wow bounceIn" data-wow-delay=".2s"></i>
-                        <h3 class="favourite-thing-heading">Philosophy</h3>
-                        <p class="text-faded"><span data-tooltip="Edward Murphy" data-tooltip-position="right" class="quote">"Everything that can possibly go wrong will go wrong"</span> <br> <span class="favourite-thing-explanation">Do I fully comprehend the system and the logic behind it? If there is a possible problem, where can it occur and what is the root of this problem? I always force myself to achieve deeper understanding and not just a large set of well defined engineering practices.<span></p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x  fa-globe wow bounceIn" data-wow-delay=".3s"></i>
-                        <h3 class="favourite-thing-heading">Travelling</h3>
-                        <p class="text-faded"><span data-tooltip="Saint Augustine" data-tooltip-position="right" class="quote">"The world is a book, and those who do not travel read only one page"</span> <br> <span class="favourite-thing-explanation">Traveling is an eye opeining experience and I love everything that's related to it: people, culture, food, couchsurfing, hitchhiking...<span> </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-<!-- CV -->
-
-<section id="cv">
-      <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Curriculum Vitae</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Education</h2>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-0 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-university wow bounceIn text-primary"></i>
-                        <h3>RWTH Aachen University</h3>
-                        <p class="text-muted">Master of Science in Automation Engineering Science</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-lg-offset-0 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-university wow bounceIn text-primary"></i>
-                        <h3>RWTH Aachen University</h3>
-                        <p class="text-muted">Bachelor of Science in Mechanical Engineering Science</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-lg-offset-0 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-university wow bounceIn text-primary"></i>
-                        <h3>Kepler Gymnasium</h3>
-                        <p class="text-muted">German A level (Abitur)</p>
-                    </div>
-                </div>
-
-                
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Work Experience</h2>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <ul class="timeline">
-                        <li class="timeline-item">
-                                <div class="timeline-badge"><i class="glyphicon glyphicon-briefcase"></i></div>
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4 class="timeline-title">Selflearning on MOOC</h4>
-                                        <div id='textbox'>
-                                            <p class='alignleft'>
-                                                <small class="text-muted">
-                                                    <i class="glyphicon glyphicon-time"></i>
-                                                Since 2017
-                                                </small>
-                                            </p>
-                                            <p class='alignright'>
-                                                <small class="text-muted">
-                                                    <i class="glyphicon glyphicon-map-marker"></i>
-                                                    Aachen, Germany
-                                                </small>
-                                            </p>
-                                        </div>
-                                        <div style="clear: both;"></div>
-                                    </div>
-                                    <div class="timeline-body">
-                                      <ul>
-                                        <li>Deep Learning Specialization. Master Deep Learning, and Break into AI</li>
-                                        <li>Self Driving Car Engineer Udacity</li>
-                                        <li>HTML, CSS, and Javascript for Web Developers</li>
-                                            <li> Technologies: C++, Tensorflow, CNN, ANN, Matlab, Python (keras, pandas), CSS, HTML, JavaScript</li> </ul>
-                                    </div>
-                                </div>
-                            </li>
-                  <li class="timeline-item">
-                      <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
-                      <div class="timeline-panel">
-                          <div class="timeline-heading">
-                              <h4 class="timeline-title">Bachelor thesis student at FEV Europe GmbH</h4>
-                              <div id='textbox'>
-                                  <p class='alignleft'>
-                                      <small class="text-muted">
-                                          <i class="glyphicon glyphicon-time"></i>
-                                          October 2019 -  January 2020
-                                      </small>
-                                  </p>
-                                  <p class='alignright'>
-                                      <small class="text-muted">
-                                          <i class="glyphicon glyphicon-map-marker"></i>
-                                          Aachen, Germany
-                                      </small>
-                                  </p>
-                              </div>
-                              <div style="clear: both;"></div>
                           </div>
-
-                          <div class="timeline-body">
-                            <ul>
-                              <li> Title: Investigation and optimization of a real-time capable model for Hardware-in-the-Loop applications </li>
-                              <li> Hardware-in-the-Loop testing to investigate interactions between different components of hybrid powertrains in dynamic use</li>
-                              <li> Coupling of laboratory test benches via network based real-time communication</li>
-                              <li> Used Virtual calibration platform to calibrate an ECU with new WLTC cycles and the new RDE legislation</li>
-                              <li> Technologies: dSPACE, Virtual Calibration of ECU, Embedded real-time system, Matlab, Python, INCA, QNX </li>
-                            </ul>
-                          </div>
+                        </div>
                       </div>
-                  </li>
-                    <li class="timeline-item">
-                        <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="timeline-title">Automotive Engineering Research Assistant at Center for Mobile Propulsion RWTH Aachen University</h4>
-                                <div id='textbox'>
-                                    <p class='alignleft'>
-                                        <small class="text-muted">
-                                            <i class="glyphicon glyphicon-time"></i>
-                                            April 2019 - September 2019
-                                        </small>
-                                    </p>
-                                    <p class='alignright'>
-                                        <small class="text-muted">
-                                            <i class="glyphicon glyphicon-map-marker"></i>
-                                            Aachen, Germany
-                                        </small>
-                                    </p>
-                                </div>
-                                <div style="clear: both;"></div>
-                            </div>
+                    </div>
 
-                            <div class="timeline-body">
-                              <ul>
+                </div>
+              </section>
+              <!-- End of Home Subpage -->
 
-                                <li> Worked at the Institute for Combustion Engines. </li>
-<li>Diesel-hybrid vehicles for networked system development in a physical and virtual environment on an Engine-in-the-loop Platform</li>
-<li>Created real-time capable, scalable, and exact models of the powertrain components</li>
-<li>Technologies: Matlab/Simulink, Engine-in-the-loop, C++</li>
-                              </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-item">
-                        <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="timeline-title">Project Engineering Intern at Robert Bosch GmbH</h4>
-                                <div id='textbox'>
-                                    <p class='alignleft'>
-                                        <small class="text-muted">
-                                            <i class="glyphicon glyphicon-time"></i>
-                                            October 2018 - March 2019
-                                        </small>
-                                    </p>
-                                    <p class='alignright'>
-                                        <small class="text-muted">
-                                            <i class="glyphicon glyphicon-map-marker"></i>
-                                            Stuttgart, Germany
-                                        </small>
-                                    </p>
-                                </div>
-                                <div style="clear: both;"></div>
-                            </div>
-                            <div class="timeline-body">
-                              <ul>
-                                <li>Worked at the Engine Control Unit Research department.</li>
-                                <li>Further software development of a reliability prediction tool for the control units</li>
-                                <li>Preparation and test planning according to different test methods</li>
-                                <li>Technologies: C++, Labview, Matlab/Simulink </li>
-                              </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-item">
-                        <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="timeline-title">Research Assistant at Laboratory for Machine Tools and Production Engineering</h4>
-                                <div id='textbox'>
-                                    <p class='alignleft'>
-                                        <small class="text-muted">
-                                            <i class="glyphicon glyphicon-time"></i>
-                                            October 2016 - May 2018
-                                        </small>
-                                    </p>
-                                    <p class='alignright'>
-                                        <small class="text-muted">
-                                            <i class="glyphicon glyphicon-map-marker"></i>
-                                            Aachen, Germany
-                                        </small>
-                                    </p>
-                                </div>
-                                <div style="clear: both;"></div>
-                            </div>
-                            <div class="timeline-body">
-                              <ul>
-                                <li>Planned and performed experiments of gear testing in noise and excitation behavior. </li>
-                                <li>Designed gearbox, cylindrical and bevel gears with AutoCAD</li>
-                                <li>Tooth Contact Analysis and Dynamic Simulation via FEM modelling tool</li>
-                                <li> Technologies: FEM, CAD, Matlab/Simulink</li>
-                              </ul>
-                            </div>
-                        </div>
-                    </li>
+              <!-- About Me Subpage -->
+              <section data-id="about-me" class="animated-section">
+                <div class="section-content">
+                  <div class="page-title">
+                    <h2>About <span>Me</span></h2>
+                  </div>
+
+                  <!-- Personal Information -->
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-7">
+                      <p>I was born in Taiwan on January, 2nd, 1996. I received my bachelor degree in mechanical engineering with specialization in energy engineering from 
+                        <a href="https://www.rwth-aachen.de/">RWTH University Aachen</a> in 2015.
+                        And I received my master degree in automation engineering from RWTH University Aachen in Feburary 2022.
+                        In March 2022 I started my career at Siemens AG under <a href="https://new.siemens.com/global/en/company/about/businesses/digital-industries.html">Digital Industries</a> department, 
+                        consulting clients' needs from a business perspective, translating them into technical terms and developing clean software system on cloud (AWS, MindSphere) and on industrial edge (IoT) platforms.
+                      </p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-5">
+                      <div class="info-list">
+                        <ul>
+                          <li>
+                            <span class="title">Age:</span>
+                            <span class="value">27</span>
+                          </li>
+
+                          <li>
+                            <span class="title">Based in:</span>
+                            <span class="value">Nuremberg, Germany (DE)</span>
+                          </li>
+
+                          <li>
+                            <span class="title">E-Mail:</span>
+                            <span class="value">shen.si-hao@hotmail.com</span>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Personal Information -->
+
+                  <div class="white-space-50"></div>
+
+                  <!-- Services -->
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="block-title">
+                        <h3>My<span> Driver</span></h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                     <p>
+                        I am a highly motivated, disciplined and curious person. Driven by my interest in constantly learning new concepts. 
+                        Challenges with high impact and goals in mind, evolves me to the next level. 
+                        Such challenges keeps me curious especially when encountering obstacles. Furthermore, I love to work in team with various cultural differences.
+                      </p>
+                    </div>
+                   
+                  </div>
+
+                  <div class="white-space-50"></div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="block-title">
+                        <h3>My<span> Strength</span></h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                     <p>
+                        I am known for my software engineering skills and DevOps know-how.
+                        I love to work and collaborate with people, and asking their opinions and suggestions for improvement. 
+                      </p>
+                    </div>
                     
-                </ul>
-            </div>
-        </div>
-</section>
+                   
+                  </div>
+                  <!-- End of Services -->
+                 
 
-<div class="bgimg-4">
-	<div class="container gallery-container">
+                  <div class="white-space-50"></div>
 
-                <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
+                  <!-- Fun Facts -->
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+
+                      <div class="block-title">
+                        <h3>Jason's <span>Hobbies</span></h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                      <div class="fun-fact gray-default">
+                        <i class="icofont-laptop"></i>
+                        <h4>Learning novel ideas</h4>
+                        <span class="fun-fact-block-text"></span>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4">
+                      <div class="fun-fact gray-default">
+                        <i class="icofont-gym-alt-2"></i>
+                        <h4>Working Out</h4>
+                        <span class="fun-fact-block-text"></span>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 ">
+                      <div class="fun-fact gray-default">
+                        <i class="icofont-ebook"></i>
+                        <h4>Reading books</h4>
+                        <span class="fun-fact-block-text"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Fun Facts -->
+
+                </div>
+              </section>
+              <!-- End of About Me Subpage -->
+
+              <!-- Resume Subpage -->
+              <section data-id="resume" class="animated-section">
+                <div class="section-content">
+                  <div class="page-title">
+                    <h2>Resume</h2>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-7">
+
+                      <div class="block-title">
+                        <h3>Experience</h3>
+                      </div>
+
+                      <div class="timeline timeline-second-style clearfix">
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">Spring 2022</h5>
+                            <span class="item-company">Digital Industries Siemens AG</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Software Engineer</h4>
+                            <p>I was in charge of developing and implementing a predictive service application for depaneling machine on Industrial Edge platform.
+                              <br>Also I migrated and refactored 4 years old software product from MindSphere PaaS (Siemens Cloud) to a platform independent product.
+                              <br>In addition to that I created Gitlab CI/CD pipelines in multiple projects to accelerate software development in various international scrum teams.
+                              <br>Furthermore, I developed automated terraform scripts for provisioning AWS EKS Cluster and other AWS related infrastructure.
+                              <br>I helped to develop Industrial Edge Ecosystem and I created the <a href='https://github.com/industrial-edge/Developer-Guide-Hands-on-App'>developer guide</a>.
+                          </div>
+                        </div>    
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">October 2019 - September 2021</h5>
+                            <span class="item-company">RWTH University Aachen</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Research Assistant</h4>
+                            <p>I developed a real-time capable bus system for an Engine-in-the-Loop testbench, and coupling other testbenches for real-time powertrain simulation in the project
+                              <a href='https://www.cmp.rwth-aachen.de/go/id/bxzlb/?lidx=1'>DUETT</a>. The goal is to optimize state-of-the-art powertrain technologies and find a cost-efficient solution
+                              to reduce CO2 and NOx emissions during the powertrain development process.
+                          </div>
+                        </div>                        
+                      </div>
+
+                      <div class="white-space-50"></div>
+
+                      <div class="block-title">
+                        <h3>Education</h3>
+                      </div>
+                      
+                      <div class="timeline timeline-second-style clearfix">
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2020-2022</h5>
+                            <span class="item-company">RWTH University Aachen</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">MSc in Automation Engineering</h4>
+                            <p>During my master's degree, I had the opportunity to grow my skills and enrich my knowledge by taking part in various research projects 
+                              with focus on coupling of virtual and real systems,
+                              control and regulation of complex hybrid drive systems. I successfully defended my master thesis in Feburary 2022</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2015-2020</h5>
+                            <span class="item-company">RWTH University Aachen</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">BSc in Mechanical Engineering</h4>
+                                  <p>During my bachelor's degree, I developed the ability to reason from first principles and learned how to learn efficiently (metalearning). 
+                                    I had the chance to work on a research project <a href='https://www.cmp.rwth-aachen.de/go/id/sikf/?lidx=1'>HyNets</a> 
+                                    to develop a novel approach for improving the resource and energy efficiency of connected hybrid cars.
+                                    I graduated in September 2020, by successfully defending my thesis</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <!-- Skills & Certificates -->
+                    <div class="col-xs-12 col-sm-5">
+                      <!-- Design Skills -->
+                      <div class="block-title">
+                        <h3>Soft <span>Skills</span></h3>
+                      </div>
+
+                      <div class="skills-info skills-second-style">
+                        <!-- Skill 1 -->
+                        <div class="skill clearfix">
+                          <h4>Time Management</h4>
+                          <div class="skill-value">90%</div>
+                        </div>
+                        <div class="skill-container skill-90">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 1 -->
+                        
+                        <!-- Skill 2 -->
+                        <div class="skill clearfix">
+                          <h4>Resilience</h4>
+                          <div class="skill-value">95%</div>
+                        </div>
+                        <div class="skill-container skill-95">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 2 -->
+                        
+                        <!-- Skill 3 -->
+                        <div class="skill clearfix">
+                          <h4>Teamwork</h4>
+                          <div class="skill-value">95%</div>
+                        </div>
+                        <div class="skill-container skill-95">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 3 -->
+                        
+                        <!-- Skill 4 -->
+                        <div class="skill clearfix">
+                          <h4>Critical Thinking</h4>
+                          <div class="skill-value">90%</div>
+                        </div>
+                        <div class="skill-container skill-90">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 4 -->
+
+                        <!-- Skill 5 -->
+                        <div class="skill clearfix">
+                          <h4>Detail Orientation</h4>
+                          <div class="skill-value">90%</div>
+                        </div>
+                        <div class="skill-container skill-90">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 5 -->
+                      </div>
+                      <!-- End of Design Skills -->
+
+                      <div class="white-space-10"></div>
+
+                      <!-- Coding Skills -->
+                      <div class="block-title">
+                        <h3>Programming <span>Skills</span></h3>
+                      </div>
+
+                      <div class="skills-info skills-second-style">
+                        <!-- Coding Skill 1 -->
+                        <div class="skill clearfix">
+                          <h4>Git, Docker, Kubernetes & Linux</h4>
+                          <div class="skill-value">90%</div>
+                        </div>
+                        <div class="skill-container skill-90">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Coding Skill 1  -->
+
+                        <!-- Coding Skill 2 -->
+                        <div class="skill clearfix">
+                          <h4>Python</h4>
+                          <div class="skill-value">85%</div>
+                        </div>
+                        <div class="skill-container skill-85">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Coding Skill 2-->
+                        
+                        <!-- Coding Skill 3-->
+                        <div class="skill clearfix">
+                          <h4>Typescript Angular</h4>
+                          <div class="skill-value">80%</div>
+                        </div>
+                        <div class="skill-container skill-80">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Coding Skill 3-->
+                        
+                        <!-- Coding Skill 4-->
+                        <div class="skill clearfix">
+                          <h4>Java Spring Boot</h4>
+                          <div class="skill-value">80%</div>
+                        </div>
+                        <div class="skill-container skill-80">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Coding Skill 4-->
+
+                        <!-- Coding Skill 5-->
+                        <div class="skill clearfix">
+                          <h4>PostgreSQL, Influxdb, ElasticSearch</h4>
+                          <div class="skill-value">80%</div>
+                        </div>
+                        <div class="skill-container skill-80">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Coding Skill 5 -->
+
+                        <!-- Coding Skill 6-->
+                        <div class="skill clearfix">
+                          <h4>Machine Learning</h4>
+                          <div class="skill-value">85%</div>
+                        </div>
+                        <div class="skill-container skill-85">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Coding Skill 6 -->
+                      </div>
+                      <!-- End of Coding Skills -->
+
+                      <div class="white-space-10"></div>
+
+                      <!-- Knowledges -->
+                      <div class="block-title">
+                        <h3>Knowledges</h3>
+                      </div>
+
+                      <ul class="knowledges">
+                        <li>Scrum Azure DevOps</li>
+                        <li>System Design</li>
+                        <li>End-to-End Systemtest</li>
+                        <li>Project Management</li>
+                        <li>Network real-time communication system</li>
+                      </ul>
+                      <!-- End of Knowledges -->
+                    </div>
+                    <!-- End of Skills & Certificates -->
+                  </div>
+
+                  <div class="white-space-50"></div>
+
+                  <!-- Certificates -->
+                  <!-- End of Certificates -->
+                </div>
+              </section>
+              <!-- End of Resume Subpage -->
+
+          <!-- Portfolio Subpage -->
+          <section data-id="awards" class="animated-section">
+                <div class="section-content">
+                  <div class="page-title">
+                    <h2>Certificates</h2>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <!-- Portfolio Content -->
+                      <div class="portfolio-content">
+
+  
+
+                        <!-- Portfolio Grid -->
+                        <div class="portfolio-grid two-columns">
+
+                          <figure class="" data-groups='[""]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/SoftwareArchitectureCertificate.png" title="" />
+                            </div>
+                          <span class="category">Software Architecture Core Learning Path<br> Siemens AG</span>
+                          </figure>
+                          
+                          <figure class="" data-groups='[""]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/DeepLearningCertificate.png" title="" />
+                            </div>
+                          <span class="category">Deep Learning Specialization<br> deeplearning.ai</span>
+                          </figure>
+
+                          <figure class="" data-groups='[""]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/Hackathon.png" title="" />
+                            </div>
+                          <span class="category">HackingForFuture Hackathon<br>  Fraunhofer Iternational Center for Networked Adaptive Production</span>
+                          </figure>
+
+                          <figure class="" data-groups='[""]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/FlyingCarCertificate.png" title="" />
+                            </div>
+                          <span class="category">Flying Car and Autonomous Flight Engineer<br> Udacity</span>
+                          </figure>
+                        </div>
+                      </div>
+                      <!-- End of Portfolio Content -->
+                    </div>
+                  </div>
+                </div>
+            </section>
+
+
+            <section data-id="teaching" class="animated-section">
+                <div class="section-content">
+                  <div class="page-title">
                     <h2>Projects</h2>
+                  </div>
+                  
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="block-title">
+                        <h3>Working Experience</h3>
+                      </div>
+                      <div class="timeline timeline-second-style clearfix">
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">Spring 2023</h5>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title"><a href='https://www.siemens.com/global/en/products/services/digital-enterprise-services/analytics-artificial-intelligence-services/predictive-services/predictive-services-for-drive-systems.html'>Refactoring existing Web-App </a></h4>         
+                            <p>Developing and Refactoring existing app to increase code quality and code coverage, to reduce cyclomatic and cognitive complexity</p>
+                          </div>
+                        </div>
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">Spring 2023</h5>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">AWS EKS IEM-as-a-Service</h4>
+                            <p>Created automated Terraform scripts for provisioning AWS EKS Cluster and for Industrial Edge Management System</p>
+                          </div>
+                        </div>
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">Fall 2022</h5>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title"><a href='https://www.siemens.com/de/de/produkte/services/digital-enterprise-services/analytik-kuenstliche-intelligenz-services/sinumerik-service-assistance.html'>Migration Motion Control Web-App </a></h4>         
+                            <p>Migrating the app from MindSphere to a platform independent product</p>
+                          </div>
+                        </div>
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">Fall 2022</h5>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">CI/CD Pipeline</h4>
+                            <p>Created multiple Gitlab CI/CD pipelines for automated compilation, unit test, end-to-end
+                               test and deployment to target cloud & edge platform</p>
+                          </div>
+                        </div>
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">Spring 2022</h5>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title"><a href='https://assets.new.siemens.com/siemens/assets/api/uuid:260777c9-d7e5-4d4e-aa44-8d5cd77e77b2/dics-b10034-01psdepanelingonepager-144_original.pdf'>Predictive Serive App for Depaneling Machine</a></h4>
+                            <p>Developed Predictive Service App for Depaneling Machines on Industrial Edge platform</p>
+                          </div>
+                        </div>
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">Spring 2022</h5>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title"><a href='https://www.siemens.com/de/de/produkte/services/digital-enterprise-services/vor-ort-instandhaltungs-services/remote-services.html'>SIPIX Remote Service for Process Industry</a></h4>
+                            <p>Developed a secure network communication between customer and remote expert for the process industry on Industrial Edge platform</p>
+                          </div>
+                        </div>
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">Spring 2022</h5>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title"><a href='https://github.com/industrial-edge/Developer-Guide-Hands-on-App'>Developer Guide for Industrial Edge Ecosystem</a></h4>
+                            <p>Helped creating Edge Developer Guide and Ecosystem Guideline</p>
+                          </div>
+                        </div>
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">Spring 2022</h5>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">UI Systemtest</h4>
+                            <p>Developed Cypress automation test suite for end-to-end UI test</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="block-title">
+                            <h3>Research Assistant at University</h3>
+                        </div>
+                        <div class="timeline timeline-second-style clearfix">
+                          <div class="timeline-item clearfix">
+                            <div class="left-part">
+                              <h5 class="item-period">Fall 2021</h5>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="right-part">
+                              <h4 class="item-title"><a href='https://www.cmp.rwth-aachen.de/cms/CMP/Forschung/~bmwbr/Virtuelle-Vernetzung-und-Co-Simulation/?lidx=1'>Virtual network and co-simulation</a></h4>
+                              <p> Developed a real-time network of connected test benches</p>
+                            </div>
+                          </div>
+                          <div class="timeline-item clearfix">
+                              <div class="left-part">
+                                <h5 class="item-period">Spring 2020</h5>
+                              </div>
+                              <div class="divider"></div>
+                              <div class="right-part">
+                                <h4 class="item-title"><a href='https://www.cmp.rwth-aachen.de/go/id/bxzlb/?lidx=1'>DUETT</a></h4>
+                                <p>Diesel-hybrid vehicles for an ecologically minded environment: A networked system development in a physical and virtual environment</p>
+                              </div>
+                          </div>
+                        
+                          <div class="timeline-item clearfix">
+                              <div class="left-part">
+                                <h5 class="item-period">Spring 2019</h5>
+                              </div>
+                              <div class="divider"></div>
+                                <div class="right-part">
+                                <h4 class="item-title"><a href='https://www.cmp.rwth-aachen.de/go/id/sikf/?lidx=1'>HyNets</a></h4>
+                                <p>Efficient hybrid drives through vehicle communication</p>
+                              </div>
+                          </div>
+
+
+                        </div>
+                      </div>
+                  </div>
                 </div>
+              </section>
+
+              
+              <!-- Contact Subpage -->
+              <section data-id="contact" class="animated-section">
+                <div class="section-content">
+                  <div class="page-title">
+                    <h2>Contact</h2>
+                  </div>
+
+                  <div class="row">
+                    <!-- Contact Info -->
+                    <div class="col-xs-12 col-sm-4">
+                      <div class="lm-info-block gray-default">
+                        <i class="material-icons">place</i>
+                        <h4>Erlangen, Germany</h4>
+                        <span class="lm-info-block-value"></span>
+                        <span class="lm-info-block-text"></span>
+                      </div>
+
+                      <div class="lm-info-block gray-default">
+                        <i class="material-icons">email</i>
+                        <h4>shen.si-hao@hotmail.com</h4>
+                        <span class="lm-info-block-value"></span>
+                        <span class="lm-info-block-text"></span>
+                      </div>
+
+                      <div class="lm-info-block gray-default">
+                        <i class="material-icons">people</i>
+                        <h4>Connect with me on 
+                          <a href="https://www.linkedin.com/in/si-hao-shen-21413482/">LinkedIn</a>
+                        </em></h4>
+                        <span class="lm-info-block-value"></span>
+                        <span class="lm-info-block-text"></span>
+                      </div>
+
+
+                    </div>
+                    <!-- End of Contact Info -->
+                    <div class="col-xs-12 col-sm-8">
+                       <div class="google-maps">
+                            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2586.4358549413664!2d11.006256916755099!3d49.589529656899515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a1f8d88101dac7%3A0xe91a3edc47cd00d!2sSiemens!5e0!3m2!1sen!2sde!4v1677529915251!5m2!1sen!2sde" 
+                            width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2586.4358549413664!2d11.006256916755099!3d49.589529656899515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a1f8d88101dac7%3A0xe91a3edc47cd00d!2sSiemens!5e0!3m2!1sen!2sde!4v1677529915251!5m2!1sen!2sde" width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </section>
+              <!-- End of Contact Subpage -->
             </div>
-        </div>
-		<div class="tz-gallery">
-			<div class="row">
-                <div class="col-lg-4 col-lg-offset-0 text-center">
-					<div class="thumbnail wow rollIn">
-						<a class="lightbox" href="img/HiL.JPG">
-							<img src="img/HiL.JPG" alt="Tunnel">
-						</a>
-						<div class="img_caption">
-							<h3>Building a ECU-in-the-loop Platform</h3>
-							<p>During my time as a research assistant at the Center for Mobile Propulsion, I build a ECU-in-the-loop plaform with my team and connect it to multiple real-time simulators and Host PC.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-lg-offset-0 text-center">
-					<div class="thumbnail wow rollIn">
-						<a class="lightbox" href="img/KF_NOx.JPG">
-							<img src="img/KF_NOx.JPG" alt="Tunnel">
-						</a>
-						<div class="img_caption">
-							<h3>Extended Kalman Filter for predicting of Nox concentration</h3>
-							<p>I developed an extended Kalman filter based on measurment data from NOx sensors and simulation data from Simulink model in a diesel engine exhaust selective catalytic reduction (SCR) after-treatment system, in order to improve accuracy in a SCR system.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-lg-offset-0 text-center">
-					<div class="thumbnail wow rollIn">
-						<a class="lightbox" href="img/RTS.jpg">
-							<img src="img/RTS.jpg" alt="Tunnel">
-						</a>
-						<div class="img_caption">
-							<h3>Hard Embedded Multi-core Real-time System</h3>
-							<p>In this project, the main question was: if you run a real-time multi-core simulation on the Hardware-in-the-loop multiple times, do you always get the same result? What are the limitions and uncertainties?</p>
-						</div>
-					</div>
-                </div>
-                <div class="col-lg-4 col-lg-offset-0 text-center">
-					<div class="thumbnail wow rollIn">
-						<a class="lightbox" href="img/Autonomous.jpg">
-							<img src="img/Autonomous.jpg" alt="Tunnel">
-						</a>
-						<div class="img_caption">
-							<h3>Selflearning on Deep Learning, Autonomous Vehicle and Machine Learning</h3>
-							<p>I really enjoyed learning new technologies and the principles behind them. For example what are the challenges of a self-driving car's perception system?</p>
-						</div>
-					</div>
-                </div>
-			
-			</div>
-		</div>
-	</div>
-</div>
+          </div>
 
-    <section class=bg-primary id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="light">
-                    <p>If you want to get in contact with me or have questions regarding my work and studies, please just send me a message or call me. I'd be super delighted to make your acquaintance!</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p><a  href="tel:+49 172 1324200"> +49 172 1324200</a></p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:shen.si-hao@hotmail.com">shen.si-hao@hotmail.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- /.banner -->
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+      </div>
+    </div>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <style>
+      .google-maps {
+        position: relative;
+        padding-bottom:82%;
+        height: 0;
+        overflow: hidden;
+      }
+      .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+      }
+    </style>
 
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/animating.js"></script>
 
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/creative.js"></script>
-    <script src="js/greeting.js"></script>
+    <script src='js/perfect-scrollbar.min.js'></script>
+    <script src='js/jquery.shuffle.min.js'></script>
+    <script src='js/masonry.pkgd.min.js'></script>
+    <script src='js/owl.carousel.min.js'></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
 
-
-    <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123765133-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'GA_TRACKING_ID');
-    </script>
-</body>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o"></script>
+    <script src="js/jquery.googlemap.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
